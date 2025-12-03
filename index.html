@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jyothipriya R | Data Engineer & Data Analyst</title>
+  <meta
+    name="description"
+    content="Portfolio website of Jyothipriya R - Aspiring Data Engineer & Data Analyst with experience in AWS, Azure, SQL, and building data pipelines & dashboards."
+  />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="brand">
+        <img src="assets/logo.png" alt="JR Logo" class="brand-logo" />
+        <span class="brand-name">Jyothipriya R</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        ☾
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="section hero-section">
+      <div class="container hero-grid">
+        <div class="hero-text" data-reveal="fade-up">
+          <p class="hero-label">Aspiring Data Engineer & Data Analyst</p>
+          <h1 class="hero-title">Hi, I’m <span class="accent">Jyothipriya</span>.</h1>
+          <p class="hero-subtitle">
+            I design and build data solutions that turn raw data into meaningful insights.
+            I’m currently focused on AWS & Azure, data pipelines, and analytics for
+            real-world business problems.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary-btn">View My Projects</a>
+            <a href="#contact" class="btn ghost-btn">Contact Me</a>
+          </div>
+          <div class="hero-meta">
+            <span>📍 Memphis, TN, USA</span>
+            <span>🎓 MS in Computer Information Systems</span>
+          </div>
+        </div>
+        <div class="hero-photo-wrapper" data-reveal="fade-left">
+          <div class="photo-orbit"></div>
+          <img
+            src="assets/profile.jpg"
+            alt="Photo of Jyothipriya"
+            class="hero-photo"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="container section-header" data-reveal="fade-up">
+        <h2>About Me</h2>
+        <p>
+          I’m a data enthusiast transitioning into full-time Data Engineering and Analytics.
+          With a background in Computer Information Systems and hands-on experience in
+          building data workflows, I enjoy simplifying complex data problems and creating
+          clean, reliable reporting for stakeholders.
+        </p>
+      </div>
+      <div class="container about-grid">
+        <div class="about-card" data-reveal="fade-right">
+          <h3>What I’m Looking For</h3>
+          <p>
+            Entry-level or junior roles such as Data Engineer, Data Analyst, or Analytics Engineer
+            where I can contribute to building ETL pipelines, dashboards, and data models while
+            continuing to grow my skills in cloud platforms.
+          </p>
+        </div>
+        <div class="about-card" data-reveal="fade-left">
+          <h3>How I Work</h3>
+          <p>
+            I like breaking problems into small, clear steps, documenting my work,
+            and collaborating closely with business users to make sure the final solution
+            actually helps them make decisions faster and with more confidence.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section section-alt">
+      <div class="container section-header" data-reveal="fade-up">
+        <h2>Skills</h2>
+        <p>
+          Tools and technologies I’m actively using and learning as I build my data engineering portfolio.
+        </p>
+      </div>
+      <div class="container skills-grid">
+        <div class="skill-group" data-reveal="fade-up">
+          <h3>Data Engineering</h3>
+          <div class="skill-tags">
+            <span>SQL</span>
+            <span>Python</span>
+            <span>PySpark</span>
+            <span>ETL / ELT</span>
+            <span>Data Modeling</span>
+          </div>
+        </div>
+        <div class="skill-group" data-reveal="fade-up">
+          <h3>Cloud & Big Data</h3>
+          <div class="skill-tags">
+            <span>AWS S3</span>
+            <span>AWS Glue</span>
+            <span>AWS Athena</span>
+            <span>Azure Data Factory</span>
+            <span>Azure Databricks</span>
+          </div>
+        </div>
+        <div class="skill-group" data-reveal="fade-up">
+          <h3>Analytics & BI</h3>
+          <div class="skill-tags">
+            <span>Power BI</span>
+            <span>Excel (Pivot, VLOOKUP)</span>
+            <span>Dashboarding</span>
+            <span>KPIs & Reporting</span>
+          </div>
+        </div>
+        <div class="skill-group" data-reveal="fade-up">
+          <h3>Foundations</h3>
+          <div class="skill-tags">
+            <span>Data Cleaning</span>
+            <span>Data Validation</span>
+            <span>Documentation</span>
+            <span>Stakeholder Communication</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="container section-header" data-reveal="fade-up">
+        <h2>Projects</h2>
+        <p>
+          A selection of hands-on projects that demonstrate my data engineering and analytics skills.
+        </p>
+      </div>
+
+      <div class="container projects-grid">
+        <!-- PROJECT 1 -->
+        <article class="project-card" data-reveal="fade-up">
+          <div class="project-badge">Data Engineering · AWS</div>
+          <h3>AWS Taxi Trips Data Lake Pipeline</h3>
+          <p>
+            Built an end-to-end ETL pipeline on AWS to ingest NYC taxi trip data into S3 (raw),
+            transform it using AWS Glue & PySpark, and expose curated Parquet datasets for analytics
+            with Athena and Power BI.
+          </p>
+          <ul class="project-highlights">
+            <li>Designed folder structure for raw and processed zones in S3.</li>
+            <li>Created AWS Glue crawlers and jobs to infer schema and transform data.</li>
+            <li>Implemented data quality checks and optimized partitions for faster queries.</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Project Write-up</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="project-card" data-reveal="fade-up">
+          <div class="project-badge">Analytics · Excel / Power BI</div>
+          <h3>Hospitality KPI Dashboard</h3>
+          <p>
+            Created an operations dashboard for a hotel property to track occupancy,
+            ADR, RevPAR, and monthly trends to support revenue and staffing decisions.
+          </p>
+          <ul class="project-highlights">
+            <li>Cleaned and standardized daily booking and revenue data.</li>
+            <li>Built interactive views for month-over-month performance.</li>
+            <li>Documented metrics and definitions for non-technical stakeholders.</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener noreferrer">GitHub / Files</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Dashboard Screenshots</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 3 (placeholder – you can change this) -->
+        <article class="project-card" data-reveal="fade-up">
+          <div class="project-badge">Data Analytics · SQL</div>
+          <h3>Supply Chain Inventory Analysis</h3>
+          <p>
+            Analyzed inventory and order data to identify slow-moving items, stockout risk,
+            and reorder recommendations using SQL and visualizations.
+          </p>
+          <ul class="project-highlights">
+            <li>Wrote SQL queries to compute lead times, turns, and service levels.</li>
+            <li>Created visuals to highlight overstock and understock items.</li>
+            <li>Summarized recommendations for business stakeholders.</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Case Study</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION -->
+    <section id="experience" class="section section-alt">
+      <div class="container section-header" data-reveal="fade-up">
+        <h2>Experience & Education</h2>
+      </div>
+      <div class="container experience-grid">
+        <div class="timeline-column" data-reveal="fade-right">
+          <h3>Experience</h3>
+          <div class="timeline-item">
+            <h4>Data Engineering & Analytics Projects (Portfolio)</h4>
+            <p class="timeline-meta">2024 – Present · Personal / Academic</p>
+            <p>
+              Designing and implementing portfolio projects in AWS and Azure,
+              focusing on data pipelines, cleaning, modeling, and analytics for
+              hospitality and supply chain-style datasets.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h4>Academic & Volunteer Analytics Work</h4>
+            <p class="timeline-meta">2020 – 2024 · Various</p>
+            <p>
+              Supported reporting tasks, Excel-based dashboards, and documentation
+              in academic and volunteer settings to strengthen analytics skills and
+              build a foundation for professional data roles.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-column" data-reveal="fade-left">
+          <h3>Education</h3>
+          <div class="timeline-item">
+            <h4>Master’s in Computer Information Systems</h4>
+            <p class="timeline-meta">Christian Brothers University · 2024</p>
+            <p>
+              Coursework and projects in data management, analytics,
+              and information systems supporting data-driven decision making.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h4>Bachelor’s in Mechanical Engineering</h4>
+            <p class="timeline-meta">Anurag Group of Institutions · 2021</p>
+            <p>
+              Developed strong analytical thinking, problem solving, and quantitative skills
+              that I now apply to data engineering and analytics work.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+      <div class="container section-header" data-reveal="fade-up">
+        <h2>Contact</h2>
+        <p>
+          If you’re hiring for Data Engineer / Data Analyst roles or would like to
+          discuss my projects, feel free to reach out.
+        </p>
+      </div>
+      <div class="container contact-grid" data-reveal="fade-up">
+        <div class="contact-card">
+          <h3>Let’s connect</h3>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:jyothipriyarathod1999@gmail.com">jyothipriyarathod1999@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+19403731065">+1 (940) 373-1065</a></li>
+            <li><strong>Location:</strong> Memphis, TN, USA</li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jyothipriya-rathod" target="_blank" rel="noopener noreferrer">/in/jyothipriya-rathod</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/jyothipriya06" target="_blank" rel="noopener noreferrer">@jyothipriya06</a></li>
+          </ul>
+        </div>
+        <div class="contact-note">
+          <p>
+            I am on OPT/STEM and actively looking for opportunities in the United States.
+            I’m open to roles where I can contribute, learn quickly, and grow into a strong
+            data engineering or analytics professional.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Jyothipriya R. All rights reserved.</p>
+      <p class="footer-note">Built with HTML, CSS, and JavaScript as part of my learning journey.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
