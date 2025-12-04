@@ -20,11 +20,7 @@
   <header class="site-header">
     <div class="container nav-container">
       <div class="brand">
-        <img src="assets/logo.png" alt="JR Logo" class="brand-logo" />
-         <img src="assets/logo.png" alt="JR Logo" class="brand-logo" />
-          <img src="assets/profile.jpg" alt="Photo of Jyothipriya" class="hero-photo" />
-/>
-
+        <img src="logo.png" alt="JR Logo" class="brand-logo" />
         <span class="brand-name">Jyothipriya R</span>
       </div>
       <nav class="nav-links">
@@ -58,14 +54,14 @@
             <a href="#contact" class="btn ghost-btn">Contact Me</a>
           </div>
           <div class="hero-meta">
-            <span> USA</span>
+            <span>📍 Memphis, TN, USA</span>
             <span>🎓 MS in Computer Information Systems</span>
           </div>
         </div>
         <div class="hero-photo-wrapper" data-reveal="fade-left">
           <div class="photo-orbit"></div>
           <img
-            src="assets/profile.jpg"
+            src="profile.jpg"
             alt="Photo of Jyothipriya"
             class="hero-photo"
           />
@@ -154,122 +150,196 @@
       </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
+    <!-- PROJECTS SECTION (UPDATED) -->
     <section id="projects" class="section">
       <div class="container section-header" data-reveal="fade-up">
         <h2>Projects</h2>
         <p>
-          A selection of hands-on projects that demonstrate my data engineering and analytics skills.
+          A selection of hands-on and in-progress projects that demonstrate my data engineering,
+          analytics, and machine learning skills.
         </p>
       </div>
 
       <div class="container projects-grid">
-        <!-- PROJECT 1 -->
+
+        <!-- PROJECT 1 – Adult Income ML (Completed) -->
         <article class="project-card" data-reveal="fade-up">
-  <div class="project-badge">Data Analytics · Machine Learning</div>
-  <h3>Adult Income Prediction (ML Classification)</h3>
-  <p>
-    Built a complete end-to-end ML classification project using the UCI Adult Census Income dataset
-    to explore demographic factors influencing income and predict whether an individual earns more than
-    $50K annually.
-  </p>
-  <ul class="project-highlights">
-    <li>Performed data cleaning, preprocessing, encoding, and feature scaling.</li>
-    <li>Conducted Exploratory Data Analysis (EDA) to understand income patterns.</li>
-    <li>Built ML models including Logistic Regression, Decision Tree, and Random Forest.</li>
-    <li>Evaluated models using accuracy, precision, recall, and confusion matrices.</li>
-    <li>Published the interactive project with visualizations on GitHub Pages.</li>
-  </ul>
-  <div class="project-links">
-    <a href="https://github.com/jyothipriya06/adult-income-project" target="_blank">GitHub Repo</a>
-    <a href="https://jyothipriya06.github.io/adult-income-project/" target="_blank">Live Project Demo</a>
-  </div>
-</article>
+          <div class="project-badge">Data Analytics · Machine Learning</div>
+          <h3>Adult Income Prediction (ML Classification)</h3>
+          <p>
+            End-to-end machine learning project using the UCI Adult Census Income dataset to analyze
+            demographic and employment factors influencing income levels and to predict whether
+            an individual earns more than $50K annually.
+          </p>
+          <ul class="project-highlights">
+            <li>Cleaned and preprocessed raw census data, handling missing values and outliers.</li>
+            <li>Encoded categorical variables and scaled numerical features for ML models.</li>
+            <li>Built and compared models such as Logistic Regression, Decision Tree, and Random Forest.</li>
+            <li>Evaluated model performance using accuracy, precision, recall, and confusion matrices.</li>
+            <li>Documented insights and published the project with visualizations on GitHub Pages.</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/jyothipriya06/adult-income-project" target="_blank" rel="noopener noreferrer">
+              GitHub Repo
+            </a>
+            <a href="https://jyothipriya06.github.io/adult-income-project/" target="_blank" rel="noopener noreferrer">
+              Live Project Demo
+            </a>
+          </div>
+        </article>
 
+        <!-- PROJECT 2 – AWS Data Engineering Pipeline (In Progress) -->
+        <article class="project-card" data-reveal="fade-up">
+          <div class="project-badge">Data Engineering · AWS · In Progress</div>
+          <h3>AWS Taxi Trips Data Lake Pipeline</h3>
+          <p>
+            Portfolio project focused on building an end-to-end data engineering pipeline on AWS
+            for NYC taxi trip data, showcasing data lake design, ETL processing, and analytics-ready outputs.
+          </p>
+          <ul class="project-highlights">
+            <li>Designing S3 data lake zones for raw, processed, and curated datasets.</li>
+            <li>Using AWS Glue Crawlers to infer schema and catalog parquet data.</li>
+            <li>Developing PySpark-based AWS Glue Jobs to clean, transform, and partition large datasets.</li>
+            <li>Querying curated data with Athena and preparing it for downstream BI tools such as Power BI.</li>
+            <li>Implementing IAM security and logging/monitoring patterns as part of best practices.</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/jyothipriya06/jyothipriya-portfolio" target="_blank" rel="noopener noreferrer">
+              GitHub Repo (In Progress)
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              Architecture &amp; Design Notes (Coming Soon)
+            </a>
+          </div>
+        </article>
 
-        <!-- PROJECT 2 -->
+        <!-- PROJECT 3 – Azure / Databricks Analytics (Planned) -->
+        <article class="project-card" data-reveal="fade-up">
+          <div class="project-badge">Data Engineering · Azure · Planned</div>
+          <h3>Azure Retail Sales Analytics Pipeline</h3>
+          <p>
+            Planned portfolio project to build an Azure-based analytics pipeline for retail sales data,
+            focusing on lakehouse design, PySpark transformations, and BI-ready curated tables.
+          </p>
+          <ul class="project-highlights">
+            <li>Ingesting CSV/Parquet data into Azure Data Lake Storage Gen2 using Azure Data Factory pipelines.</li>
+            <li>Transforming data in Azure Databricks with PySpark and managing bronze/silver/gold layers.</li>
+            <li>Creating Delta Lake tables to support reliable, ACID-compliant analytics.</li>
+            <li>Designing star-schema models to support sales, product, and customer reporting.</li>
+            <li>Building Power BI dashboards for sales performance, trends, and key KPIs.</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              GitHub Repo (Planned)
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              Project Walkthrough (Coming Soon)
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 4 – KPI / Dashboard Project -->
         <article class="project-card" data-reveal="fade-up">
           <div class="project-badge">Analytics · Excel / Power BI</div>
-          <h3>Hospitality KPI Dashboard</h3>
+          <h3>Operations &amp; KPI Dashboard (Hospitality / Business)</h3>
           <p>
-            Created an operations dashboard for a hotel property to track occupancy,
-            ADR, RevPAR, and monthly trends to support revenue and staffing decisions.
+            Dashboard project designed to practice building business-focused KPIs and reports, such as
+            occupancy, revenue, or order volumes, using Excel and Power BI.
           </p>
           <ul class="project-highlights">
-            <li>Cleaned and standardized daily booking and revenue data.</li>
-            <li>Built interactive views for month-over-month performance.</li>
-            <li>Documented metrics and definitions for non-technical stakeholders.</li>
+            <li>Cleaning and standardizing daily transactional or booking data.</li>
+            <li>Designing calculated measures and KPIs (e.g., occupancy %, ADR, revenue trends).</li>
+            <li>Creating interactive visuals to highlight performance over time and by category.</li>
+            <li>Documenting metric definitions and assumptions for non-technical stakeholders.</li>
+            <li>Packaging the dashboard and documentation as a portfolio artifact for recruiters.</li>
           </ul>
           <div class="project-links">
-            <a href="#" target="_blank" rel="noopener noreferrer">GitHub / Files</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Dashboard Screenshots</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              Dashboard Files (Coming Soon)
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              Case Study PDF (Planned)
+            </a>
           </div>
         </article>
 
-        <!-- PROJECT 3 (placeholder – you can change this) -->
-        <article class="project-card" data-reveal="fade-up">
-          <div class="project-badge">Data Analytics · SQL</div>
-          <h3>Supply Chain Inventory Analysis</h3>
-          <p>
-            Analyzed inventory and order data to identify slow-moving items, stockout risk,
-            and reorder recommendations using SQL and visualizations.
-          </p>
-          <ul class="project-highlights">
-            <li>Wrote SQL queries to compute lead times, turns, and service levels.</li>
-            <li>Created visuals to highlight overstock and understock items.</li>
-            <li>Summarized recommendations for business stakeholders.</li>
-          </ul>
-          <div class="project-links">
-            <a href="#" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Case Study</a>
-          </div>
-        </article>
       </div>
     </section>
 
-    <!-- EXPERIENCE & EDUCATION -->
+    <!-- EXPERIENCE & EDUCATION (UPDATED) -->
     <section id="experience" class="section section-alt">
       <div class="container section-header" data-reveal="fade-up">
-        <h2>Experience & Education</h2>
+        <h2>Experience &amp; Education</h2>
       </div>
       <div class="container experience-grid">
+
+        <!-- EXPERIENCE COLUMN -->
         <div class="timeline-column" data-reveal="fade-right">
           <h3>Experience</h3>
+
           <div class="timeline-item">
-            <h4>Data Engineering & Analytics Projects (Portfolio)</h4>
-            <p class="timeline-meta">2024 – Present · Personal / Academic</p>
+            <h4>Academic Capstone – Adult Income Prediction (ML)</h4>
+            <p class="timeline-meta">2023 – 2024 · Christian Brothers University</p>
             <p>
-              Designing and implementing portfolio projects in AWS and Azure,
-              focusing on data pipelines, cleaning, modeling, and analytics for
-              hospitality and supply chain-style datasets.
+              Completed a capstone-style machine learning project using the UCI Adult Census Income dataset
+              to explore demographic drivers of income and build a classification model for &gt;$50K earnings.
             </p>
+            <ul style="margin-top: 0.4rem; padding-left: 1.1rem; color: var(--text-muted); font-size: 0.88rem;">
+              <li>Performed data cleaning, preprocessing, and feature engineering for ML models.</li>
+              <li>Implemented and compared multiple algorithms (Logistic Regression, Decision Tree, Random Forest).</li>
+              <li>Evaluated performance using standard ML metrics and documented key insights.</li>
+            </ul>
           </div>
+
           <div class="timeline-item">
-            <h4>Academic & Volunteer Analytics Work</h4>
-            <p class="timeline-meta">2024· Various</p>
+            <h4>Data Engineering &amp; Analytics Portfolio (AWS &amp; Azure)</h4>
+            <p class="timeline-meta">2024 – Present · Personal Projects</p>
             <p>
-              Supported reporting tasks, Excel-based dashboards, and documentation
-              in academic and volunteer settings to strengthen analytics skills and
-              build a foundation for professional data roles.
+              Building a structured portfolio to demonstrate data engineering and analytics skills across
+              AWS and Azure, including data lakes, ETL pipelines, and analytics-ready datasets.
             </p>
+            <ul style="margin-top: 0.4rem; padding-left: 1.1rem; color: var(--text-muted); font-size: 0.88rem;">
+              <li>Designing S3 and ADLS Gen2 data lake structures with raw/processed/curated zones.</li>
+              <li>Practicing ETL/ELT with AWS Glue, PySpark, Azure Data Factory, and Databricks.</li>
+              <li>Preparing curated datasets for reporting tools such as Power BI and Excel.</li>
+              <li>Documenting architecture and learnings to communicate clearly with recruiters.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <h4>Academic &amp; Volunteer Analytics Support</h4>
+            <p class="timeline-meta">2020 – 2024 · Various</p>
+            <p>
+              Contributed to analytics tasks in academic and small-business contexts, focusing on
+              Excel-based reporting, metric tracking, and data cleaning.
+            </p>
+            <ul style="margin-top: 0.4rem; padding-left: 1.1rem; color: var(--text-muted); font-size: 0.88rem;">
+              <li>Maintained structured spreadsheets and KPI trackers for monthly reviews.</li>
+              <li>Helped standardize data entry and improve data quality for reporting.</li>
+              <li>Prepared summaries and notes to support discussions and decision-making.</li>
+            </ul>
           </div>
         </div>
+
+        <!-- EDUCATION COLUMN -->
         <div class="timeline-column" data-reveal="fade-left">
           <h3>Education</h3>
+
           <div class="timeline-item">
             <h4>Master’s in Computer Information Systems</h4>
             <p class="timeline-meta">Christian Brothers University · 2024</p>
             <p>
-              Coursework and projects in data management, analytics,
-              and information systems supporting data-driven decision making.
+              Focused on data management, analytics, and information systems, building a foundation
+              for data engineering and analytics roles.
             </p>
           </div>
+
           <div class="timeline-item">
             <h4>Bachelor’s in Mechanical Engineering</h4>
             <p class="timeline-meta">Anurag Group of Institutions · 2021</p>
             <p>
-              Developed strong analytical thinking, problem solving, and quantitative skills
-              that I now apply to data engineering and analytics work.
+              Developed strong analytical and quantitative reasoning skills, problem-solving ability,
+              and a structured engineering mindset now applied to data problems.
             </p>
           </div>
         </div>
@@ -291,8 +361,19 @@
           <ul class="contact-list">
             <li><strong>Email:</strong> <a href="mailto:jyothipriyarathod1999@gmail.com">jyothipriyarathod1999@gmail.com</a></li>
             <li><strong>Phone:</strong> <a href="tel:+19403731065">+1 (940) 373-1065</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jyothipriya-ramavath-395470253/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/jyothipriya-ramavath-395470253/</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/jyothipriya06" target="_blank" rel="noopener noreferrer">@jyothipriya06</a></li>
+            <li><strong>Location:</strong> Memphis, TN, USA</li>
+            <li><strong>LinkedIn:</strong>
+              <a href="https://www.linkedin.com/in/jyothipriya-ramavath-395470253/"
+                 target="_blank" rel="noopener noreferrer">
+                /in/jyothipriya-ramavath-395470253
+              </a>
+            </li>
+            <li><strong>GitHub:</strong>
+              <a href="https://github.com/jyothipriya06"
+                 target="_blank" rel="noopener noreferrer">
+                @jyothipriya06
+              </a>
+            </li>
           </ul>
         </div>
         <div class="contact-note">
