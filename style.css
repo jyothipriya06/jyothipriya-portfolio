@@ -279,17 +279,20 @@ a:hover {
   text-decoration: underline;
 }
 
-.hero-photo-wrapper {
+.hero-logo-wrapper {
   justify-self: center;
 }
+/* Logo in place of hero photo */
 .hero-logo-large {
-  width: 240px;
-  height: 240px;
+  width: 260px;
+  height: 260px;
   object-fit: contain;
   border-radius: 20px;
-  background: #fff;
-  padding: 20px;
-  box-shadow: var(--shadow-soft);
+  background: #ffffff;
+  padding: 25px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+}
+
 }
 
 }
@@ -664,5 +667,6 @@ a:hover {
     font-size: 1.8rem;
   }
 }
+
 
 
