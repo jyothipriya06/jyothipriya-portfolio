@@ -1,21 +1,20 @@
 // Mobile nav toggle
 const navToggle = document.getElementById("navToggle");
-const navLinks = document.getElementById("navLinks");
+const navMenu = document.getElementById("navMenu");
 
-if (navToggle && navLinks) {
+if (navToggle && navMenu) {
   navToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
+    navMenu.classList.toggle("show");
   });
 
-  // Close menu on link click (mobile)
-  navLinks.addEventListener("click", (e) => {
+  navMenu.addEventListener("click", (e) => {
     if (e.target.tagName === "A") {
-      navLinks.classList.remove("show");
+      navMenu.classList.remove("show");
     }
   });
 }
 
-// Contact form – simple fake submit message
+// Contact fake submit
 const contactForm = document.getElementById("contactForm");
 const formNote = document.getElementById("formNote");
 
@@ -23,7 +22,7 @@ if (contactForm && formNote) {
   contactForm.addEventListener("submit", (e) => {
     e.preventDefault();
     formNote.textContent =
-      "Thank you, your message has been noted. Please also email me directly for faster response.";
+      "Thanks for reaching out. For faster response, please also email me directly.";
   });
 }
 
