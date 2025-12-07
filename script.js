@@ -1,43 +1,34 @@
-// ----------------------------------------------
-//  SIMPLE JS FOR PORTFOLIO WEBSITE
-//  - Footer year auto-update
-//  - Scroll reveal animations
-// ----------------------------------------------
+// Mobile nav toggle
+const navToggle = document.getElementById("navToggle");
+const navLinks = document.getElementById("navLinks");
 
-document.addEventListener("DOMContentLoaded", () => {
+if (navToggle && navLinks) {
+  navToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
 
-  // ----------------------------------------------
-  // 1. Set current year in footer
-  // ----------------------------------------------
-  const yearEl = document.getElementById("year");
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
-  }
+  // Close menu on link click (mobile)
+  navLinks.addEventListener("click", (e) => {
+    if (e.target.tagName === "A") {
+      navLinks.classList.remove("show");
+    }
+  });
+}
 
-  // ----------------------------------------------
-  // 2. Scroll Reveal Animation
-  // ----------------------------------------------
-  const revealElements = document.querySelectorAll("[data-reveal]");
+// Contact form – simple fake submit message
+const contactForm = document.getElementById("contactForm");
+const formNote = document.getElementById("formNote");
 
-  // If browser supports IntersectionObserver
-  if ("IntersectionObserver" in window) {
-    const observer = new IntersectionObserver(
-      (entries, obs) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("revealed");
-            obs.unobserve(entry.target);   // Reveal only once
-          }
-        });
-      },
-      { threshold: 0.15 }   // 15% visible before revealing
-    );
+if (contactForm && formNote) {
+  contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    formNote.textContent =
+      "Thank you, your message has been noted. Please also email me directly for faster response.";
+  });
+}
 
-    revealElements.forEach(el => observer.observe(el));
-
-  } else {
-    // Fallback if browser does not support IntersectionObserver
-    revealElements.forEach(el => el.classList.add("revealed"));
-  }
-
-});
+// Footer year
+const yearEl = document.getElementById("year");
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
