@@ -2,337 +2,412 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>Jyothipriya Ramavath | Data Analyst & Data Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jyothipriya R | Data Analyst & Aspiring Data Engineer</title>
   <meta
     name="description"
-    content="Portfolio of Jyothipriya R, Data Analyst and aspiring Data Engineer with experience in SQL, Python, Power BI, Azure, AWS and cloud-based ETL."
+    content="Portfolio of Jyothipriya Ramavath — Data Analyst with experience in banking and healthcare analytics, building dashboards, data pipelines, and reporting solutions."
   />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- HEADER -->
+  <!-- HEADER / NAVBAR -->
   <header class="site-header">
-    <div class="container nav-container">
-      <div class="brand">
-        <img src="logo.png" alt="JR Logo" class="brand-logo" />
-        <div class="brand-text">
-          <div class="brand-name">Jyothipriya R</div>
-          <div class="brand-subtitle">Data Analyst · Aspiring Data Engineer</div>
-        </div>
-      </div>
-      <nav class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Project</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+    <div class="container header-content">
+      <a href="#top" class="brand">
+        <!-- Replace logo.png with your actual logo filename -->
+        <img src="logo.png" alt="JR Logo" class="logo" />
+        <span class="brand-text">Jyothipriya Ramavath</span>
+      </a>
+
+      <nav class="nav">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          ☰
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">What I Do</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section id="home" class="section hero-section">
+  <!-- HERO SECTION -->
+  <main id="top">
+    <section id="hero" class="hero">
       <div class="container hero-grid">
-        <div class="hero-text" data-reveal="fade-up">
-          <p class="hero-kicker">Dallas, TX · Data Analyst / Aspiring Data Engineer</p>
-          <h1 class="hero-title">
-            Hi, I’m Jyothipriya.<br />
-            <span class="accent">I work with data, dashboards and ETL.</span>
-          </h1>
+        <div class="hero-text">
+          <p class="eyebrow">Data Analytics · Dashboards · SQL · Power BI</p>
+          <h1>Turning Raw Data into Practical Decisions.</h1>
           <p class="hero-subtitle">
-            I have a little over three years of experience working with SQL, Python, Power BI and
-            cloud data tools. I enjoy cleaning messy data, building simple workflows in Azure and AWS,
-            and turning everything into KPIs and reports that people actually use.
+            I’m <strong>Jyothipriya Ramavath</strong>, a Data Analyst with hands-on
+            experience in <strong>banking</strong> and <strong>healthcare</strong> analytics.
+            I build SQL-based reports, Power BI dashboards, and clean data workflows
+            that help teams see what’s really happening in their business.
           </p>
+
           <div class="hero-actions">
-            <a href="#projects" class="btn primary-btn">View My ML Project</a>
-            <a href="#experience" class="btn ghost-btn">See Work Experience</a>
+            <!-- Point this to your actual resume PDF path -->
+            <a href="Resume_DA-compressed.pdf" class="btn primary" target="_blank" rel="noopener">
+              View Resume
+            </a>
+            <a href="#projects" class="btn ghost">
+              View Projects
+            </a>
           </div>
-          <div class="hero-contact-inline">
-            <span>📞 <a href="tel:+19403731065">+1 (940) 373-1065</a></span>
-            <span>📧 <a href="mailto:jyothipriyarathod1999@gmail.com">jyothipriyarathod1999@gmail.com</a></span>
-            <span>🔗
-              <a href="https://www.linkedin.com/in/jyothipriya-ramavath-395470253/" target="_blank" rel="noopener noreferrer">
-                LinkedIn
-              </a>
-            </span>
-            <span>💻
-              <a href="https://github.com/jyothipriya06" target="_blank" rel="noopener noreferrer">
-                GitHub
-              </a>
-            </span>
-          </div>
-        <div class="hero-photo-wrapper" data-reveal="fade-left">
-  <img src="logo.png" alt="JR Logo" class="hero-logo-large" />
-</div>
-    </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section section-alt">
-      <div class="container section-header" data-reveal="fade-up">
-        <h2>About Me</h2>
-      </div>
-      <div class="container summary-grid">
-        <div class="summary-card" data-reveal="fade-up">
-          <p>
-            I’m a data analyst and aspiring data engineer with experience in healthcare, banking and
-            retail. Most of my work has been around data cleansing, building KPIs, and moving data
-            from raw files into cleaner tables that are easier to query and report on.
-          </p>
-          <p>
-            I work mainly with <strong>SQL</strong>, <strong>Python</strong>, <strong>Power BI</strong>
-            and cloud tools like <strong>Azure</strong> and <strong>AWS</strong>. I’ve helped build
-            pipelines, tuned queries, and supported dashboards for fraud risk, hospital operations and
-            inventory planning.
-          </p>
-          <p>
-            I like keeping things practical: understand the requirement, pull the right data,
-            shape it into something clean, and then show it with simple visuals so that business teams
-            can make decisions quickly.
-          </p>
+          <div class="hero-meta">
+            <span>Based in Dallas, TX</span>
+            <span>Open to Data Analyst & Data Engineering roles</span>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="hero-card">
+            <h2>Quick Snapshot</h2>
+            <ul>
+              <li>3+ years in analytics (banking & healthcare)</li>
+              <li>Strong in SQL, Power BI, Python, Excel</li>
+              <li>Experience with KPIs, dashboards, and reporting automation</li>
+            </ul>
+          </div>
+
+          <div class="hero-card">
+            <h3>Core Strengths</h3>
+            <ul>
+              <li>Customer & transaction analysis</li>
+              <li>Healthcare scheduling analytics</li>
+              <li>Data cleaning & quality checks</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-      <div class="container section-header" data-reveal="fade-up">
-        <h2>Technical Skills</h2>
-        <p>These are the tools and concepts I use the most in my day-to-day work.</p>
-      </div>
-      <div class="container skills-table-wrapper" data-reveal="fade-up">
-        <table class="skills-table">
-          <thead>
-            <tr>
-              <th>Category</th>
-              <th>Tools / Technologies</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Programming</td>
-              <td>Python (pandas, numpy, scikit-learn), PySpark</td>
-            </tr>
-            <tr>
-              <td>Databases &amp; SQL</td>
-              <td>SQL (joins, CTE, window functions), SQL Server, MySQL, Athena</td>
-            </tr>
-            <tr>
-              <td>BI &amp; Visualization</td>
-              <td>Power BI (DAX), Tableau, Excel (PowerQuery, PivotTables)</td>
-            </tr>
-            <tr>
-              <td>Cloud Data Engineering</td>
-              <td>Azure (Data Factory, Databricks, Synapse, Cosmos DB), AWS (S3, Glue, Athena, IAM)</td>
-            </tr>
-            <tr>
-              <td>ETL &amp; Data Modeling</td>
-              <td>Raw → Staging → Processed layers, Star schema, Parquet, Delta Lake</td>
-            </tr>
-            <tr>
-              <td>AI / Machine Learning</td>
-              <td>Classification models, anomaly detection, feature engineering</td>
-            </tr>
-            <tr>
-              <td>Version Control &amp; Web</td>
-              <td>Git, GitHub, basic HTML &amp; CSS</td>
-            </tr>
-            <tr>
-              <td>Domain Knowledge</td>
-              <td>Healthcare KPIs, retail inventory metrics, financial transaction data</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section section-alt">
-      <div class="container section-header" data-reveal="fade-up">
-        <h2>Experience</h2>
-      </div>
-
-      <div class="container experience-grid">
-        <!-- Jones Bank -->
-        <article class="experience-card" data-reveal="fade-up">
-          <h3>Data Engineer — Jones Bank</h3>
-          <p class="experience-meta">Seward, NE · Feb 2025 – Present</p>
-          <p class="experience-overview">
-            I work on data engineering and AI-assisted analytics to improve fraud detection,
-            transactional reporting and system performance.
-          </p>
-          <ul>
-            <li>Designed data pipelines with Azure Data Factory and Databricks, which helped reduce refresh failures.</li>
-            <li>Built and monitored AI/ML models in Python and Synapse ML to flag unusual transaction patterns for fraud teams.</li>
-            <li>Optimized SQL in Snowflake and Azure Synapse to speed up reporting queries.</li>
-            <li>Used Azure Functions for event-driven ingestion to support near real-time analytics.</li>
-            <li>Structured large datasets in Cosmos DB with partitions and indexes to improve query times.</li>
-            <li>Helped automate deployments with Terraform and Azure DevOps so environments stayed consistent.</li>
-            <li>Worked with business users to create Power BI reports for risk scores, transaction volumes and fraud cases.</li>
-          </ul>
-          <p class="experience-tech">
-            <strong>Tech stack:</strong> Azure (Data Factory, Databricks, Synapse, Cosmos DB),
-            Python, Power BI, SQL, Snowflake, Terraform, Delta Lake
-          </p>
-        </article>
-
-        <!-- IKS Healthcare -->
-        <article class="experience-card" data-reveal="fade-up">
-          <h3>Data Analyst — IKS Healthcare</h3>
-          <p class="experience-meta">Hyderabad, India · Jul 2021 – Nov 2022</p>
-          <p class="experience-overview">
-            I supported hospital operations and patient scheduling analytics to improve appointment utilization and reduce wait times.
-          </p>
-          <ul>
-            <li>Used SQL joins, filters and window functions on appointment data to study wait times and cancellation patterns.</li>
-            <li>Built Power BI dashboards for clinic KPIs like no-show %, appointment lead time, referral source and time-of-day trends.</li>
-            <li>Used Excel Power Query to standardize different input files so recurring reports were more accurate.</li>
-            <li>Cleaned and merged patient demographic data with Python (pandas) before visualization.</li>
-            <li>Shared weekly summary reports with operations leaders about scheduling and clinic capacity trends.</li>
-          </ul>
-          <p class="experience-tech">
-            <strong>Key KPIs:</strong> No-show %, wait time, provider utilization, cancellation type, return visit rate<br />
-            <strong>Tools:</strong> SQL Server, Power BI, Python, Excel Power Query, DAX
-          </p>
-        </article>
-
-        <!-- D-Mart -->
-        <article class="experience-card" data-reveal="fade-up">
-          <h3>Supply Chain Analyst — D-Mart Retail Operations</h3>
-          <p class="experience-meta">Hyderabad, India · Jun 2019 – Jun 2021</p>
-          <p class="experience-overview">
-            I worked with inventory and vendor data to support retail procurement and store planning.
-          </p>
-          <ul>
-            <li>Built Excel dashboards for inventory turnover, stockout % and vendor on-time delivery using PivotTables and lookups.</li>
-            <li>Looked at historical sales and seasonality to support demand forecasting and reduce stock shortages.</li>
-            <li>Maintained product master data and vendor details in SAP MM.</li>
-            <li>Prepared weekly and monthly KPI reports for warehouse managers and purchasing teams.</li>
-            <li>Identified slow-moving items and suggested reorder changes to reduce excess stock and improve turnover.</li>
-          </ul>
-          <p class="experience-tech">
-            <strong>Tools:</strong> Excel (PivotTables, XLOOKUP), SQL, SAP MM, Power BI
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="container section-header" data-reveal="fade-up">
-        <h2>Project</h2>
-        <p>This is an academic ML project I completed during my master’s program.</p>
-      </div>
-
-      <div class="container projects-grid">
-        <article class="project-card" data-reveal="fade-up">
-          <h3>Adult Income Prediction — ML Classification</h3>
-          <p class="project-meta">Christian Brothers University · Aug 2024 – Dec 2024</p>
+    <!-- WHAT I DO / SERVICES SECTION -->
+    <section id="services" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>What I Do</h2>
           <p>
-            Built and evaluated machine learning models to predict whether a person earns above or
-            below $50K using demographic and job-related attributes.
+            I focus on making data reliable, readable, and useful for decision-makers.
           </p>
-          <ul>
-            <li>Cleaned and prepared the dataset in Python, including missing value handling, encoding and feature selection.</li>
-            <li>Ran exploratory analysis to understand how income relates to education, occupation and hours worked.</li>
-            <li>Trained Logistic Regression, Random Forest and Gradient Boosting models and compared them.</li>
-            <li>Used train/test split, cross-validation and hyperparameter tuning to improve performance.</li>
-            <li>Measured results with accuracy, F1 score and ROC-AUC (final model reached around 88% accuracy).</li>
-            <li>Documented the project and published charts and visualisations on GitHub Pages.</li>
-          </ul>
-          <!-- If you later put this on GitHub Pages as a separate site, you can add links here -->
-          <!--
-          <div class="project-links">
-            <a href="YOUR_PROJECT_PAGE_URL" target="_blank" rel="noopener noreferrer">View Project</a>
-            <a href="YOUR_GITHUB_REPO_URL" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
-          </div>
-          -->
-        </article>
-      </div>
-    </section>
+        </header>
 
-    <!-- EDUCATION & CERTIFICATION -->
-    <section id="education" class="section section-alt">
-      <div class="container section-header" data-reveal="fade-up">
-        <h2>Education & Certification</h2>
-      </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Data Analysis & Reporting</h3>
+            <p>
+              Use SQL and Python to pull, clean, and explore data. Build
+              clear reports that answer questions about customers, operations,
+              and performance.
+            </p>
+            <ul class="tag-list">
+              <li>SQL (CTEs, joins, window functions)</li>
+              <li>EDA & trend analysis</li>
+              <li>Banking & healthcare analytics</li>
+            </ul>
+          </article>
 
-      <div class="container education-grid">
-        <article class="education-card" data-reveal="fade-up">
-          <h3>Master of Science (M.S.) — Computer Information Systems</h3>
-          <p class="education-meta">Christian Brothers University, Memphis, TN · 2024</p>
-        </article>
-        <article class="education-card" data-reveal="fade-up">
-          <h3>Bachelor of Technology (B.Tech) — Mechanical Engineering</h3>
-          <p class="education-meta">Anurag Group of Institutions, Hyderabad, India · 2021</p>
-        </article>
-      </div>
+          <article class="card">
+            <h3>Dashboards & KPIs</h3>
+            <p>
+              Design Power BI dashboards and Excel reports that track KPIs like
+              deposit growth, no-show %, utilization, and more.
+            </p>
+            <ul class="tag-list">
+              <li>Power BI & DAX</li>
+              <li>Excel Power Query</li>
+              <li>Automated monthly reporting</li>
+            </ul>
+          </article>
 
-      <div class="container certifications-grid">
-        <article class="cert-card" data-reveal="fade-up">
-          <h3>IBM Data Visualization Certification</h3>
-          <p class="cert-meta">IBM Developer Skills Network · Issued Oct 2023</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="container section-header" data-reveal="fade-up">
-        <h2>Contact</h2>
-        <p>If you’d like to talk about data analyst or junior data engineer roles, feel free to reach out.</p>
-      </div>
-      <div class="container contact-grid" data-reveal="fade-up">
-        <div class="contact-card">
-          <h3>Get in Touch</h3>
-          <ul class="contact-list">
-            <li>
-              <strong>Email:</strong>
-              <a href="mailto:jyothipriyarathod1999@gmail.com">jyothipriyarathod1999@gmail.com</a>
-            </li>
-            <li>
-              <strong>Phone:</strong>
-              <a href="tel:+19403731065">+1 (940) 373-1065</a>
-            </li>
-            <li>
-              <strong>Location:</strong> Dallas, TX, USA
-            </li>
-            <li>
-              <strong>LinkedIn:</strong>
-              <a
-                href="https://www.linkedin.com/in/jyothipriya-ramavath-395470253/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                linkedin.com/in/jyothipriya-ramavath
-              </a>
-            </li>
-            <li>
-              <strong>GitHub:</strong>
-              <a
-                href="https://github.com/jyothipriya06"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                github.com/jyothipriya06
-              </a>
-            </li>
-          </ul>
+          <article class="card">
+            <h3>Data Foundations</h3>
+            <p>
+              Build reliable data structures for analysis: clean tables,
+              consistent rules, and reusable queries that can support future
+              data engineering work.
+            </p>
+            <ul class="tag-list">
+              <li>Data cleaning & validation</li>
+              <li>Data model thinking</li>
+              <li>Version control with Git</li>
+            </ul>
+          </article>
         </div>
-        <div class="contact-note">
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>Projects</h2>
           <p>
-            I built this site to keep my resume, skills and projects in one place. I’m always learning,
-            especially around cloud data engineering and applied machine learning, and I’m open to roles
-            where I can keep growing in those areas.
+            Selected work highlighting my experience in analytics, dashboards, and
+            basic machine learning.
           </p>
+        </header>
+
+        <div class="card-grid">
+
+          <!-- Healthcare Project -->
+          <article class="card project-card">
+            <h3>Healthcare Appointment & KPI Dashboard</h3>
+            <p class="project-domain">Domain: Healthcare / Hospital Operations</p>
+            <p>
+              Built an end-to-end analytics flow on hospital appointment data to
+              understand no-shows, wait times, and provider utilization.
+            </p>
+            <ul>
+              <li>Analyzed ~100K+ appointments to track no-show %, lead time, and clinic load.</li>
+              <li>Used SQL and Python (Pandas) to clean and join multiple data sources.</li>
+              <li>Designed Power BI dashboards for operations teams to monitor KPIs weekly.</li>
+            </ul>
+            <div class="project-tags">
+              <span>SQL</span><span>Python</span><span>Power BI</span><span>Healthcare KPIs</span>
+            </div>
+          </article>
+
+          <!-- Credit Risk Project -->
+          <article class="card project-card">
+            <h3>Credit Risk & Loan Default Analysis</h3>
+            <p class="project-domain">Domain: Banking / Credit Risk</p>
+            <p>
+              Analyzed loan application data to understand patterns in defaults and
+              high-risk customer segments.
+            </p>
+            <ul>
+              <li>Segmented borrowers by income, employment, and loan type using SQL.</li>
+              <li>Built dashboards to compare default rates across risk groups and time.</li>
+              <li>Suggested focus segments for closer review and improved decision rules.</li>
+            </ul>
+            <div class="project-tags">
+              <span>SQL</span><span>Power BI</span><span>Risk Analytics</span>
+            </div>
+          </article>
+
+          <!-- Hotel / Hospitality Project -->
+          <article class="card project-card">
+            <h3>Hotel Performance & Revenue Dashboard</h3>
+            <p class="project-domain">Domain: Hospitality / Revenue Management</p>
+            <p>
+              Worked on hotel booking data to track occupancy, ADR, RevPAR, and
+              cancellation patterns across multiple booking channels.
+            </p>
+            <ul>
+              <li>Created Excel/Power BI views for ADR, RevPAR, and occupancy trends.</li>
+              <li>Analyzed cancellation reasons and booking lead time to find revenue leaks.</li>
+              <li>Built weekly summary views for quick review by management.</li>
+            </ul>
+            <div class="project-tags">
+              <span>Excel</span><span>Power BI</span><span>Hospitality KPIs</span>
+            </div>
+          </article>
+
+          <!-- Retail / Sales Project -->
+          <article class="card project-card">
+            <h3>Retail Sales & Inventory Analysis</h3>
+            <p class="project-domain">Domain: Retail / Demand Planning</p>
+            <p>
+              Explored multi-store sales data to understand category performance and
+              inventory risks like stockouts.
+            </p>
+            <ul>
+              <li>Tracked monthly sales by store and category with SQL and Power BI.</li>
+              <li>Identified high-revenue products and low-turnover items.</li>
+              <li>Supported basic demand planning for upcoming months.</li>
+            </ul>
+            <div class="project-tags">
+              <span>SQL</span><span>Power BI</span><span>Inventory KPIs</span>
+            </div>
+          </article>
+
+          <!-- ML Project -->
+          <article class="card project-card">
+            <h3>Adult Income Prediction (ML Classification)</h3>
+            <p class="project-domain">Domain: Machine Learning / Classification</p>
+            <p>
+              Built classification models to predict whether an individual earns
+              more than $50K based on demographic and employment attributes.
+            </p>
+            <ul>
+              <li>Performed data cleaning, encoding, and feature selection in Python.</li>
+              <li>Trained Logistic Regression, Random Forest, and Gradient Boosting models.</li>
+              <li>Reached ~88% accuracy and evaluated using F1 and ROC-AUC.</li>
+            </ul>
+            <div class="project-tags">
+              <span>Python</span><span>Pandas</span><span>Sklearn</span><span>ML</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Experience</h2>
+          <p>Roles where I applied analytics to real-world banking and healthcare problems.</p>
+        </header>
+
+        <div class="timeline">
+
+          <article class="timeline-item">
+            <h3>Data Analyst — Jones Bank</h3>
+            <p class="meta">Seward, NE · Feb 2025 – Present</p>
+            <ul>
+              <li>Analyze customer transactions, loan data, and account activity for reporting and risk assessment.</li>
+              <li>Build Power BI dashboards for deposit growth, loan performance, transaction volume, and retention.</li>
+              <li>Use SQL to extract and validate data from multiple internal systems.</li>
+              <li>Automate monthly reports with Excel Power Query, reducing manual work.</li>
+              <li>Partner with compliance and operations to support audits and regulatory reporting.</li>
+            </ul>
+            <p class="tools">
+              Tools: SQL Server, Power BI, Excel Power Query, Python
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <h3>Data Analyst — IKS Healthcare</h3>
+            <p class="meta">Hyderabad, India · Jul 2021 – Nov 2022</p>
+            <ul>
+              <li>Queried large appointment datasets using SQL to understand wait times, cancellations, and provider performance.</li>
+              <li>Built Power BI dashboards for no-show %, appointment lead time, and provider utilization.</li>
+              <li>Standardized recurring reports with Excel Power Query to reduce processing errors.</li>
+              <li>Used Python (Pandas) for data cleaning and merging patient datasets.</li>
+              <li>Supported operations leaders with weekly insights on capacity and staffing needs.</li>
+            </ul>
+            <p class="tools">
+              Tools: SQL Server, Power BI, Python, Excel Power Query
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>Skills</h2>
+        </header>
+
+        <div class="skills-grid">
+          <div class="skills-group">
+            <h3>Programming & Data</h3>
+            <ul>
+              <li>Python (Pandas, NumPy)</li>
+              <li>SQL (CTEs, window functions, joins)</li>
+              <li>Jupyter Notebook</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3>Databases & Tools</h3>
+            <ul>
+              <li>SQL Server, MySQL</li>
+              <li>SQL Server Management Studio</li>
+              <li>Git / GitHub</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3>Visualization & Reporting</h3>
+            <ul>
+              <li>Power BI (Dashboards, DAX)</li>
+              <li>Excel (Power Query, Pivot Tables)</li>
+              <li>Excel automation for recurring reports</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3>Analytics & ML</h3>
+            <ul>
+              <li>EDA & KPI tracking</li>
+              <li>Logistic Regression, Random Forest, Gradient Boosting</li>
+              <li>Model evaluation (Accuracy, F1, ROC-AUC)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section id="education" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Education & Certifications</h2>
+        </header>
+
+        <div class="edu-grid">
+          <article class="edu-item">
+            <h3>Master of Science, Computer Information Systems</h3>
+            <p class="meta">Christian Brothers University — Memphis, TN · 2024</p>
+          </article>
+
+          <article class="edu-item">
+            <h3>Bachelor of Technology, Mechanical Engineering</h3>
+            <p class="meta">Anurag Group of Institutions — Hyderabad, India · 2021</p>
+          </article>
+
+          <article class="edu-item">
+            <h3>IBM Data Visualization Certification</h3>
+            <p class="meta">IBM Developer Skills Network · Issued Oct 2023</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>Contact</h2>
+          <p>
+            Interested in working together or discussing an opportunity? Reach out.
+          </p>
+        </header>
+
+        <div class="contact-layout">
+          <div class="contact-info">
+            <p><strong>Location:</strong> Dallas, TX</p>
+            <p><strong>Email:</strong> <a href="mailto:jyothipriyarathod1999@gmail.com">jyothipriyarathod1999@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+19403731065">+1 (940) 373-1065</a></p>
+            <!-- Optional: add your links -->
+            <p><strong>Links:</strong></p>
+            <ul>
+              <li><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+              <li><a href="#hero">Download Resume</a></li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn primary full-width">Send Message</button>
+            <p class="form-note" id="formNote"></p>
+          </form>
         </div>
       </div>
     </section>
@@ -341,13 +416,11 @@
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-content">
-      <p>© <span id="year"></span> Jyothipriya R. All rights reserved.</p>
-      <p class="footer-note">Hand-written content based on my current resume.</p>
+      <p>© <span id="year"></span> Jyothipriya Ramavath. All rights reserved.</p>
+      <a href="#top" class="back-to-top">Back to top ↑</a>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
