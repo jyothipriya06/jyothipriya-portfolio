@@ -2,248 +2,259 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Jyothipriya Ramavath | Data Analyst & Data Engineer</title>
+  <title>Jyothipriya Ramavath | Data Analytics & BI Solutions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="description"
-    content="Portfolio of Jyothipriya Ramavath — Data Analyst with experience in banking and healthcare analytics, building dashboards, data pipelines, and reporting solutions."
+    content="Data analytics and BI solutions by Jyothipriya Ramavath: dashboards, SQL reporting, and KPI insights for banking, healthcare, and operations."
   />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <!-- HEADER / NAVBAR -->
-  <header class="site-header">
-    <div class="container header-content">
+<body id="top">
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
       <a href="#top" class="brand">
-        <!-- Replace logo.png with your actual logo filename -->
-        <img src="logo.png" alt="JR Logo" class="logo" />
-        <span class="brand-text">Jyothipriya Ramavath</span>
+        <!-- Your logo only (no photo) -->
+        <img src="logo.png" alt="JR Logo" class="brand-logo" />
+        <span class="brand-name">Jyothipriya Ramavath</span>
       </a>
 
-      <nav class="nav">
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-          ☰
-        </button>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#services">What I Do</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav class="nav" id="navMenu">
+        <a href="#hero">Home</a>
+        <a href="#services">What I Do</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <main id="top">
+  <!-- HERO -->
+  <main>
     <section id="hero" class="hero">
-      <div class="container hero-grid">
+      <div class="container hero-inner">
         <div class="hero-text">
-          <p class="eyebrow">Data Analytics · Dashboards · SQL · Power BI</p>
-          <h1>Turning Raw Data into Practical Decisions.</h1>
+          <p className="hero-kicker">Data Analytics · Dashboards · Reporting</p>
+          <h1>Practical Data Insights for Real-World Decisions.</h1>
           <p class="hero-subtitle">
-            I’m <strong>Jyothipriya Ramavath</strong>, a Data Analyst with hands-on
-            experience in <strong>banking</strong> and <strong>healthcare</strong> analytics.
-            I build SQL-based reports, Power BI dashboards, and clean data workflows
-            that help teams see what’s really happening in their business.
+            I’m <strong>Jyothipriya Ramavath</strong>, a Data Analyst with experience in
+            <strong>banking</strong> and <strong>healthcare</strong> analytics.
+            I design SQL-based reports and Power BI dashboards that help teams
+            understand performance, reduce bottlenecks, and make confident decisions.
           </p>
-
           <div class="hero-actions">
-            <!-- Point this to your actual resume PDF path -->
-            <a href="Resume_DA-compressed.pdf" class="btn primary" target="_blank" rel="noopener">
+            <a
+              href="Resume_DA-compressed.pdf"
+              class="btn primary"
+              target="_blank"
+              rel="noopener"
+            >
               View Resume
             </a>
-            <a href="#projects" class="btn ghost">
+            <a href="#projects" class="btn outlined">
               View Projects
             </a>
           </div>
-
           <div class="hero-meta">
             <span>Based in Dallas, TX</span>
-            <span>Open to Data Analyst & Data Engineering roles</span>
+            <span>Open to Data Analyst & BI roles</span>
           </div>
         </div>
 
         <div class="hero-panel">
           <div class="hero-card">
-            <h2>Quick Snapshot</h2>
+            <h2>Key Focus Areas</h2>
             <ul>
-              <li>3+ years in analytics (banking & healthcare)</li>
-              <li>Strong in SQL, Power BI, Python, Excel</li>
-              <li>Experience with KPIs, dashboards, and reporting automation</li>
+              <li>KPI dashboards for banking and healthcare</li>
+              <li>SQL-based data cleaning and reporting</li>
+              <li>Operational insights for leadership teams</li>
             </ul>
           </div>
-
-          <div class="hero-card">
-            <h3>Core Strengths</h3>
-            <ul>
-              <li>Customer & transaction analysis</li>
-              <li>Healthcare scheduling analytics</li>
-              <li>Data cleaning & quality checks</li>
-            </ul>
+          <div class="hero-card hero-card-secondary">
+            <h3>Core Tech Stack</h3>
+            <div class="pill-row">
+              <span>SQL Server</span>
+              <span>Power BI</span>
+              <span>Python (Pandas)</span>
+              <span>Excel Power Query</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- WHAT I DO / SERVICES SECTION -->
+    <!-- SERVICES (like "Our Services" section on kopensoft) -->
     <section id="services" class="section">
       <div class="container">
         <header class="section-header">
-          <h2>What I Do</h2>
+          <h2>Data Analytics Services</h2>
           <p>
-            I focus on making data reliable, readable, and useful for decision-makers.
+            I provide end-to-end analytics support, from raw data extraction to
+            dashboards and insights that business users can actually use.
           </p>
         </header>
 
-        <div class="card-grid">
-          <article class="card">
-            <h3>Data Analysis & Reporting</h3>
+        <div class="grid-3">
+          <article class="service-card">
+            <h3>Analytics & Reporting</h3>
             <p>
-              Use SQL and Python to pull, clean, and explore data. Build
-              clear reports that answer questions about customers, operations,
-              and performance.
+              Design and run SQL queries to extract, clean, and validate data for
+              recurring and ad-hoc reports in banking, healthcare, and operations.
             </p>
-            <ul class="tag-list">
-              <li>SQL (CTEs, joins, window functions)</li>
-              <li>EDA & trend analysis</li>
-              <li>Banking & healthcare analytics</li>
+            <ul>
+              <li>Complex joins, CTEs, window functions</li>
+              <li>Customer & transaction analysis</li>
+              <li>Trend analysis & KPI tracking</li>
             </ul>
+            <span class="service-link">Explore Analytics →</span>
           </article>
 
-          <article class="card">
-            <h3>Dashboards & KPIs</h3>
+          <article class="service-card">
+            <h3>Dashboards & BI</h3>
             <p>
-              Design Power BI dashboards and Excel reports that track KPIs like
-              deposit growth, no-show %, utilization, and more.
+              Build intuitive Power BI dashboards and Excel views that surface KPIs:
+              deposit growth, no-show %, utilization, and performance trends.
             </p>
-            <ul class="tag-list">
-              <li>Power BI & DAX</li>
-              <li>Excel Power Query</li>
-              <li>Automated monthly reporting</li>
+            <ul>
+              <li>Power BI dashboards & DAX</li>
+              <li>Excel Power Query automation</li>
+              <li>Self-service reporting for stakeholders</li>
             </ul>
+            <span class="service-link">Explore Dashboards →</span>
           </article>
 
-          <article class="card">
+          <article class="service-card">
             <h3>Data Foundations</h3>
             <p>
-              Build reliable data structures for analysis: clean tables,
-              consistent rules, and reusable queries that can support future
-              data engineering work.
+              Improve data quality and consistency with standardized rules, templates,
+              and reusable data flows that support future analytics and engineering.
             </p>
-            <ul class="tag-list">
+            <ul>
               <li>Data cleaning & validation</li>
-              <li>Data model thinking</li>
-              <li>Version control with Git</li>
+              <li>Documentation of business rules</li>
+              <li>Reusable SQL / data models</li>
             </ul>
+            <span class="service-link">Explore Data Process →</span>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="section alt">
+    <!-- “In Association With” style strip – but for tools instead of companies -->
+    <section class="section strip">
+      <div class="container strip-inner">
+        <h3>Working Comfortably With</h3>
+        <div class="strip-pills">
+          <span>SQL Server</span>
+          <span>Power BI</span>
+          <span>Excel Power Query</span>
+          <span>Python · Pandas</span>
+          <span>Git & GitHub</span>
+          <span>Jupyter Notebook</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS (similar to service cards listing) -->
+    <section id="projects" class="section section-alt">
       <div class="container">
         <header class="section-header">
-          <h2>Projects</h2>
+          <h2>Selected Projects</h2>
           <p>
-            Selected work highlighting my experience in analytics, dashboards, and
-            basic machine learning.
+            A sample of analytics work across healthcare, banking, hospitality,
+            retail, and machine learning experiments.
           </p>
         </header>
 
-        <div class="card-grid">
+        <div class="grid-3">
 
-          <!-- Healthcare Project -->
-          <article class="card project-card">
+          <article class="project-card">
             <h3>Healthcare Appointment & KPI Dashboard</h3>
-            <p class="project-domain">Domain: Healthcare / Hospital Operations</p>
+            <p class="project-tagline">Hospital operations · Scheduling analytics</p>
             <p>
-              Built an end-to-end analytics flow on hospital appointment data to
-              understand no-shows, wait times, and provider utilization.
+              Analyzed hospital appointment data to understand no-shows, wait times,
+              and provider utilization, delivering a dashboard used by operations.
             </p>
             <ul>
-              <li>Analyzed ~100K+ appointments to track no-show %, lead time, and clinic load.</li>
-              <li>Used SQL and Python (Pandas) to clean and join multiple data sources.</li>
-              <li>Designed Power BI dashboards for operations teams to monitor KPIs weekly.</li>
+              <li>~100K+ appointments, SQL + Python (Pandas)</li>
+              <li>Power BI dashboard for no-show %, lead time, utilization</li>
+              <li>Weekly views for scheduling & capacity planning</li>
             </ul>
-            <div class="project-tags">
-              <span>SQL</span><span>Python</span><span>Power BI</span><span>Healthcare KPIs</span>
+            <div class="chip-row">
+              <span>SQL</span><span>Power BI</span><span>Python</span>
             </div>
           </article>
 
-          <!-- Credit Risk Project -->
-          <article class="card project-card">
+          <article class="project-card">
             <h3>Credit Risk & Loan Default Analysis</h3>
-            <p class="project-domain">Domain: Banking / Credit Risk</p>
+            <p class="project-tagline">Banking · Risk & portfolio insights</p>
             <p>
-              Analyzed loan application data to understand patterns in defaults and
-              high-risk customer segments.
+              Built credit-risk dashboards to break down default rates across
+              income, employment, and loan segments, helping highlight high-risk groups.
             </p>
             <ul>
-              <li>Segmented borrowers by income, employment, and loan type using SQL.</li>
-              <li>Built dashboards to compare default rates across risk groups and time.</li>
-              <li>Suggested focus segments for closer review and improved decision rules.</li>
+              <li>Segmented borrowers via SQL queries</li>
+              <li>Power BI dashboards for default KPIs</li>
+              <li>Recommended segments for closer review</li>
             </ul>
-            <div class="project-tags">
+            <div class="chip-row">
               <span>SQL</span><span>Power BI</span><span>Risk Analytics</span>
             </div>
           </article>
 
-          <!-- Hotel / Hospitality Project -->
-          <article class="card project-card">
+          <article class="project-card">
             <h3>Hotel Performance & Revenue Dashboard</h3>
-            <p class="project-domain">Domain: Hospitality / Revenue Management</p>
+            <p class="project-tagline">Hospitality · Revenue & occupancy</p>
             <p>
-              Worked on hotel booking data to track occupancy, ADR, RevPAR, and
-              cancellation patterns across multiple booking channels.
+              Analyzed hotel booking data to monitor occupancy, ADR, RevPAR and
+              cancellation trends, supporting revenue and operations decisions.
             </p>
             <ul>
-              <li>Created Excel/Power BI views for ADR, RevPAR, and occupancy trends.</li>
-              <li>Analyzed cancellation reasons and booking lead time to find revenue leaks.</li>
-              <li>Built weekly summary views for quick review by management.</li>
+              <li>Excel & Power BI KPI views</li>
+              <li>Cancellation & lead-time patterns</li>
+              <li>Weekly summary deck for management</li>
             </ul>
-            <div class="project-tags">
+            <div class="chip-row">
               <span>Excel</span><span>Power BI</span><span>Hospitality KPIs</span>
             </div>
           </article>
 
-          <!-- Retail / Sales Project -->
-          <article class="card project-card">
+          <article class="project-card">
             <h3>Retail Sales & Inventory Analysis</h3>
-            <p class="project-domain">Domain: Retail / Demand Planning</p>
+            <p class="project-tagline">Retail · Sales & demand planning</p>
             <p>
-              Explored multi-store sales data to understand category performance and
-              inventory risks like stockouts.
+              Explored multi-store sales to identify high-revenue products and
+              potential stockout risks, supporting inventory decisions.
             </p>
             <ul>
-              <li>Tracked monthly sales by store and category with SQL and Power BI.</li>
-              <li>Identified high-revenue products and low-turnover items.</li>
-              <li>Supported basic demand planning for upcoming months.</li>
+              <li>Sales trends per store and category</li>
+              <li>Inventory turnover and stockout flags</li>
+              <li>Insights for upcoming demand planning</li>
             </ul>
-            <div class="project-tags">
+            <div class="chip-row">
               <span>SQL</span><span>Power BI</span><span>Inventory KPIs</span>
             </div>
           </article>
 
-          <!-- ML Project -->
-          <article class="card project-card">
-            <h3>Adult Income Prediction (ML Classification)</h3>
-            <p class="project-domain">Domain: Machine Learning / Classification</p>
+          <article class="project-card">
+            <h3>Adult Income Prediction (ML)</h3>
+            <p class="project-tagline">Machine Learning · Classification</p>
             <p>
-              Built classification models to predict whether an individual earns
-              more than $50K based on demographic and employment attributes.
+              Built ML models to predict whether income exceeds $50K using demographic
+              and employment attributes, focusing on clean data preparation.
             </p>
             <ul>
-              <li>Performed data cleaning, encoding, and feature selection in Python.</li>
-              <li>Trained Logistic Regression, Random Forest, and Gradient Boosting models.</li>
-              <li>Reached ~88% accuracy and evaluated using F1 and ROC-AUC.</li>
+              <li>Logistic Regression, Random Forest, Gradient Boosting</li>
+              <li>~88% accuracy, evaluated with F1 & ROC-AUC</li>
+              <li>Documented workflow and results</li>
             </ul>
-            <div class="project-tags">
-              <span>Python</span><span>Pandas</span><span>Sklearn</span><span>ML</span>
+            <div class="chip-row">
+              <span>Python</span><span>Pandas</span><span>Sklearn</span>
             </div>
           </article>
 
@@ -251,173 +262,124 @@
       </div>
     </section>
 
-    <!-- EXPERIENCE SECTION -->
-    <section id="experience" class="section">
-      <div class="container">
-        <header class="section-header">
-          <h2>Experience</h2>
-          <p>Roles where I applied analytics to real-world banking and healthcare problems.</p>
-        </header>
-
-        <div class="timeline">
-
-          <article class="timeline-item">
-            <h3>Data Analyst — Jones Bank</h3>
-            <p class="meta">Seward, NE · Feb 2025 – Present</p>
-            <ul>
-              <li>Analyze customer transactions, loan data, and account activity for reporting and risk assessment.</li>
-              <li>Build Power BI dashboards for deposit growth, loan performance, transaction volume, and retention.</li>
-              <li>Use SQL to extract and validate data from multiple internal systems.</li>
-              <li>Automate monthly reports with Excel Power Query, reducing manual work.</li>
-              <li>Partner with compliance and operations to support audits and regulatory reporting.</li>
-            </ul>
-            <p class="tools">
-              Tools: SQL Server, Power BI, Excel Power Query, Python
-            </p>
-          </article>
-
-          <article class="timeline-item">
-            <h3>Data Analyst — IKS Healthcare</h3>
-            <p class="meta">Hyderabad, India · Jul 2021 – Nov 2022</p>
-            <ul>
-              <li>Queried large appointment datasets using SQL to understand wait times, cancellations, and provider performance.</li>
-              <li>Built Power BI dashboards for no-show %, appointment lead time, and provider utilization.</li>
-              <li>Standardized recurring reports with Excel Power Query to reduce processing errors.</li>
-              <li>Used Python (Pandas) for data cleaning and merging patient datasets.</li>
-              <li>Supported operations leaders with weekly insights on capacity and staffing needs.</li>
-            </ul>
-            <p class="tools">
-              Tools: SQL Server, Power BI, Python, Excel Power Query
-            </p>
-          </article>
-
+    <!-- ABOUT (similar to “About Kopensoft”) -->
+    <section id="about" class="section">
+      <div class="container about-inner">
+        <div class="about-text">
+          <h2>About Jyothipriya</h2>
+          <p>
+            I am a <strong>Data Analyst</strong> with experience in banking and
+            healthcare domains, focused on turning operational data into reports and
+            dashboards that leadership can rely on.
+          </p>
+          <p>
+            My work spans customer transaction analysis, clinic appointment
+            utilization, KPI tracking, and risk insights. I pay attention to data
+            quality, documentation, and the small details that keep reporting stable.
+          </p>
+          <p>
+            I enjoy working closely with operations, compliance, and business
+            stakeholders to translate real-world questions into data problems, and
+            data problems into clear visuals and metrics.
+          </p>
         </div>
-      </div>
-    </section>
-
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="section alt">
-      <div class="container">
-        <header class="section-header">
-          <h2>Skills</h2>
-        </header>
-
-        <div class="skills-grid">
-          <div class="skills-group">
-            <h3>Programming & Data</h3>
+        <div class="about-side">
+          <div class="info-card">
+            <h3>Experience Snapshot</h3>
             <ul>
-              <li>Python (Pandas, NumPy)</li>
-              <li>SQL (CTEs, window functions, joins)</li>
-              <li>Jupyter Notebook</li>
+              <li>Data Analyst — Jones Bank (Banking)</li>
+              <li>Data Analyst — IKS Healthcare (Healthcare)</li>
+              <li>Projects across finance, hospitality, and retail</li>
             </ul>
           </div>
-
-          <div class="skills-group">
-            <h3>Databases & Tools</h3>
+          <div class="info-card">
+            <h3>Education & Certification</h3>
             <ul>
-              <li>SQL Server, MySQL</li>
-              <li>SQL Server Management Studio</li>
-              <li>Git / GitHub</li>
-            </ul>
-          </div>
-
-          <div class="skills-group">
-            <h3>Visualization & Reporting</h3>
-            <ul>
-              <li>Power BI (Dashboards, DAX)</li>
-              <li>Excel (Power Query, Pivot Tables)</li>
-              <li>Excel automation for recurring reports</li>
-            </ul>
-          </div>
-
-          <div class="skills-group">
-            <h3>Analytics & ML</h3>
-            <ul>
-              <li>EDA & KPI tracking</li>
-              <li>Logistic Regression, Random Forest, Gradient Boosting</li>
-              <li>Model evaluation (Accuracy, F1, ROC-AUC)</li>
+              <li>M.S. Computer Information Systems — CBU</li>
+              <li>B.Tech Mechanical Engineering — Anurag Group</li>
+              <li>IBM Data Visualization Certification</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- EDUCATION & CERTIFICATIONS -->
-    <section id="education" class="section">
-      <div class="container">
-        <header class="section-header">
-          <h2>Education & Certifications</h2>
-        </header>
-
-        <div class="edu-grid">
-          <article class="edu-item">
-            <h3>Master of Science, Computer Information Systems</h3>
-            <p class="meta">Christian Brothers University — Memphis, TN · 2024</p>
-          </article>
-
-          <article class="edu-item">
-            <h3>Bachelor of Technology, Mechanical Engineering</h3>
-            <p class="meta">Anurag Group of Institutions — Hyderabad, India · 2021</p>
-          </article>
-
-          <article class="edu-item">
-            <h3>IBM Data Visualization Certification</h3>
-            <p class="meta">IBM Developer Skills Network · Issued Oct 2023</p>
-          </article>
+    <!-- FINAL CTA (similar to “Ready to Transform Your Business?”) -->
+    <section class="section section-cta">
+      <div class="container cta-inner">
+        <h2>Ready to Use Your Data More Effectively?</h2>
+        <p>
+          Whether you need a dashboard from scratch or help making sense of existing
+          reports, I can support analytics work in banking, healthcare, or operations.
+        </p>
+        <div class="cta-actions">
+          <a href="#contact" class="btn primary">Contact Me</a>
+          <a href="Resume_DA-compressed.pdf" class="btn outlined" target="_blank" rel="noopener">
+            Download Resume
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="section alt">
-      <div class="container">
-        <header class="section-header">
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="container contact-inner">
+        <div class="contact-info">
           <h2>Contact</h2>
           <p>
-            Interested in working together or discussing an opportunity? Reach out.
+            For roles, collaborations, or projects, feel free to reach out directly.
           </p>
-        </header>
-
-        <div class="contact-layout">
-          <div class="contact-info">
-            <p><strong>Location:</strong> Dallas, TX</p>
-            <p><strong>Email:</strong> <a href="mailto:jyothipriyarathod1999@gmail.com">jyothipriyarathod1999@gmail.com</a></p>
-            <p><strong>Phone:</strong> <a href="tel:+19403731065">+1 (940) 373-1065</a></p>
-            <!-- Optional: add your links -->
-            <p><strong>Links:</strong></p>
-            <ul>
-              <li><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
-              <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
-              <li><a href="#hero">Download Resume</a></li>
-            </ul>
-          </div>
-
-          <form class="contact-form" id="contactForm">
-            <div class="form-row">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" required />
-            </div>
-            <div class="form-row">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" required />
-            </div>
-            <div class="form-row">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn primary full-width">Send Message</button>
-            <p class="form-note" id="formNote"></p>
-          </form>
+          <p><strong>Location:</strong> Dallas, TX</p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:jyothipriyarathod1999@gmail.com">
+              jyothipriyarathod1999@gmail.com
+            </a>
+          </p>
+          <p>
+            <strong>Phone:</strong>
+            <a href="tel:+19403731065">+1 (940) 373-1065</a>
+          </p>
+          <p><strong>Links:</strong></p>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com" target="_blank" rel="noopener">
+                GitHub
+              </a>
+            </li>
+          </ul>
         </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn primary full-width">Send Message</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
       </div>
     </section>
   </main>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-content">
+  <footer class="footer">
+    <div class="container footer-inner">
       <p>© <span id="year"></span> Jyothipriya Ramavath. All rights reserved.</p>
-      <a href="#top" class="back-to-top">Back to top ↑</a>
+      <a href="#top" class="footer-link">Back to top ↑</a>
     </div>
   </footer>
 
